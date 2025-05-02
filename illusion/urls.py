@@ -37,6 +37,7 @@ urlpatterns = [
     re_path(r"^api/v1/auth/accounts/", include("allauth.urls")),
     path('api/', include('accounts.urls')),
     path('api/', include('courses.urls')),
+    path('api/', include('hackathon.urls')),
     path('docs/', schema_view.with_ui('swagger', cache_timeout=0),name='schema-swagger-ui'),
 
 

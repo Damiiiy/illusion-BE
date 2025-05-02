@@ -8,3 +8,7 @@ class IsCreator(BasePermission):
 class IsLearner(BasePermission):
     def has_permission(self, request, view):
         return request.user.is_authenticated and request.user.role == 'Learner'
+    
+class IsHackathonUser(BasePermission):
+    def has_permission(self, request, view):
+        return request.user.is_authenticated and request.user.role == 'Hackathon User'
