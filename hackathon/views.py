@@ -57,3 +57,6 @@ class HackathonRegistration(generics.CreateAPIView):
             raise serializers.ValidationError("You have already applied for this hackathon.")
 
         serializer.save(user=user)
+
+
+        # .git .github .idea .venv accounts courses hackathon illusion jobs permissions serializers setting staticfiles templates venv .env .gitignore changelogs.md db.sqlite3 LICENSE.md manage.py README.md requirements.txt
